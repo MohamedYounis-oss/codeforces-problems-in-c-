@@ -1,0 +1,20 @@
+n = map (int, input().split())
+
+word = str(input())
+
+A_counter = 0
+D_counter = 0
+
+for i in word:
+    if i == "A":
+        A_counter += 1
+    elif i =="D":
+        D_counter +=1
+
+if A_counter > D_counter:
+    print("Anton")
+elif D_counter > A_counter:
+    print("Danik")
+else:
+    print("Friendship")
+
